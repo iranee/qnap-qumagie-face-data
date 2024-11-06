@@ -113,3 +113,8 @@ uname="admin"
 password=""
 可选密码。为空则密码为系统默认`qnapqnap`，如果这里设置为`123456`，则密码为`qanpqnap123456`
 ```
+### 相关截图
+![command](https://raw.githubusercontent.com/iranee/qnap-qumagie-face-data/refs/heads/main/command.jpg
+)
+![数据类型](https://raw.githubusercontent.com/iranee/qnap-qumagie-face-data/refs/heads/main/ui.jpg
+)
