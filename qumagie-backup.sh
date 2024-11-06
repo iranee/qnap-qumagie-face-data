@@ -1,4 +1,12 @@
 #!/bin/bash
+# ------------------------------------------------------------
+# QuMagie qnap-qumagie-face-data
+# 作用：此脚本用备份 QuMagie 相册程序的人像数据
+# 作者：bbis
+# Website：https://cheen.cn
+# GitHub：https://github.com/iranee
+# 日期：2024-11-06
+# ------------------------------------------------------------
 QPKG_CONF=/etc/config/qpkg.conf
 QPKG_NAME="qumagie"
 ENABLED=$(/sbin/getcfg $QPKG_NAME Enable -u -d FALSE -f $QPKG_CONF)
