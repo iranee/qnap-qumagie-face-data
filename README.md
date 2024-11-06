@@ -90,4 +90,23 @@ QuMagie 版本 v2.4.0 支持了人脸识别元数据的备份和恢复，但目�
     "Qtag": "32febe21201f4fbfb94d02b58d15b3972ec9d78803e5",
     "DataVersion": "1.0"
 }
+```
+### 使用方法
+将`qumagie-backup.sh`文件上传到你的 QNAP 设备中，并赋予0755系统权限。
 
+编辑`qumagie-backup.sh`代码，填入相关的备份用户名以及保存地址。
+关键数据是第10-13行，
+```
+export_type="metadata"   
+可选：metadata ，仅元数据。表示从帐户导出元数据(例如相册、标签、人物等)
+可选：full，文件和元数据。从帐户导出媒体文件和元数据(例如相册、标签、人物等)
+
+target_folder="备份/照片备份/QuMagie"
+ 备份路径，是在/share/目录下的文件夹，所以前戳不需要再加/share/路径
+
+uname="admin"
+当前用户名，如果是最高权限管理员，可以备份其他用户的数据。
+
+password=""
+可选密码。为空则密码为系统默认`qnapqnap`，如果这里设置为`123456`，则密码为`qanpqnap123456`
+```
